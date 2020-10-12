@@ -7,6 +7,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\DefinitionDecorator;
 use Symfony\Component\DependencyInjection\ChildDefinition;
 use Symfony\Component\DependencyInjection\Reference;
+use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 
 class SamlFactory extends AbstractFactory
 {

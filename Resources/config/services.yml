@@ -31,3 +31,9 @@ services:
             - "%onelogin_auth.auth_map%"
         calls:
             - [setContainer, ["@service_container"]]
+
+    Hslavich\OneloginSamlBundle\Controller\SamlController:
+        class: 'Hslavich\OneloginSamlBundle\Controller\SamlController'
+        tags: ['controller.service_arguments', 'controller.service_subscriber']
+        calls:
+            - [setContainer, ["@service_container"]]

@@ -9,6 +9,18 @@ use Symfony\Component\HttpFoundation\Request;
 
 class SamlController extends AbstractController
 {
+
+    /**
+     * @internal
+     * @required
+     */
+    public function setContainer(ContainerInterface $container): ?ContainerInterface
+    {
+        parent::setContainer($container);
+        $this->container = $container;
+        return $this->container;
+    }
+    
     /**
      * @param Request $request
      * @param string  $idp

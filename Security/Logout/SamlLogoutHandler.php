@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Http\Logout\LogoutHandlerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 class SamlLogoutHandler implements LogoutHandlerInterface, ContainerAwareInterface
 {

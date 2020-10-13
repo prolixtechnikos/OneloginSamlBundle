@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\HttpFoundation\Request;
+use Psr\Container\ContainerInterface;
 
 class SamlController extends AbstractController
 {
@@ -20,7 +21,7 @@ class SamlController extends AbstractController
         $this->container = $container;
         return $this->container;
     }
-    
+
     /**
      * @param Request $request
      * @param string  $idp
